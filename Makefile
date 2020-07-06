@@ -1,2 +1,2 @@
 test:
-	raco test
+	raco test .
