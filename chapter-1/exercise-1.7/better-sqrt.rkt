@@ -9,8 +9,8 @@
 (define (sqrt-iter guess x)
   (define new-guess (improve guess x))
   (if (good-enough? guess new-guess)
-    guess
+    new-guess
     (sqrt-iter new-guess x)))
 
 (define (good-enough? old-guess new-guess)
-  (<= (abs (- old-guess new-guess)) (* new-guess 0.001)))
+  (<= (abs (- old-guess new-guess)) (* new-guess 0.00001)))
