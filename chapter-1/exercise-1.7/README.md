@@ -23,4 +23,4 @@ of 123412341234123, the program will at some point need to calculate the average
 and 11109110.731022669 (ratio of radicand and guess), getting the result of 11109110.731022667 which equals to guess.
 Thus, the guess will remain the same and the program enters infinite recursion.
 
-For the alternative implementation of `good-enough?` procedure please see [./better-sqrt.rkt](better-sqrt.rkt file).
+For the alternative implementation of `good-enough?` procedure please see [better-sqrt.rkt file](./better-sqrt.rkt).

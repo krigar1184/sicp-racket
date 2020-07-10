@@ -8,7 +8,6 @@
   (sqrt-iter 1.0 x))
 
 (define (sqrt-iter guess x)
-  (println guess)
   (if (good-enough? guess x)
       guess
       (sqrt-iter (improve guess x) x)))
