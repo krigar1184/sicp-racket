@@ -1,5 +1,3 @@
-; This is the sqrt procedure implementation from the book
-
 #lang racket
 
 (provide sqrt2 improve average)
@@ -13,10 +11,12 @@
       (sqrt-iter (improve guess x) x)))
 
 (define (good-enough? guess x)
-  (<= (abs (- (* guess guess) x)) 0.001))
+  (<= (abs (- (* guess guess) x)) 0.0001))
 
 (define (improve guess x)
   (average guess (/ x guess)))
 
 (define (average a b)
   (/ (+ a b) 2))
+
+(sqrt2 0.01)
